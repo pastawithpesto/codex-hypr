@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "project": "Codex Hypr",
+  "repository_name": "codex-hypr",
+  "development_version": "0.1.0-dev",
+  "upstream": {
+    "repository": "https://github.com/openai/codex",
+    "version": "0.163.0",
+    "tag": "rust-v0.163.0",
+    "commit": "83086188ae0614bd882818ff1aa23f3194962012",
+    "release_url": "https://github.com/openai/codex/releases/tag/rust-v0.163.0"
+  },
+  "hyprland_service": {
+    "version": "0.2.2",
+    "source_directory": "hyprland-service",
+    "license": "MIT"
+  },
+  "desktop_reference": {
+    "product": "ChatGPT desktop app for Linux",
+    "version": "26.1013.40934",
+    "role": "Compatibility reference from the tested machine; desktop app/runtime are not included in this source fork"
+  },
+  "native_cua_integration": "not_implemented",
+  "release_status": "source_snapshot",
+  "target_environment": {
+    "distribution": "Omarchy Linux",
+    "compositor": "Hyprland",
+    "display_protocol": "Wayland"
+  },
+  "project_type": "computer_use_fix",
+  "distribution_form": "source_snapshot"
+}

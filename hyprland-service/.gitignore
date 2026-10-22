@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+bin/linux-cua-wtype
+dist/
+*.credentials.json
+cua-images/
+captures/
+host-fixture-prep/
+*-service-test/
+*.log
+*.jsonl
+profiles/
+profile/
+screenshots/

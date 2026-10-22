@@ -1,0 +1,31 @@
+[Unit]
+Description=Local Hyprland computer-use service
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=notify
+NotifyAccess=main
+TimeoutStopSec=30
+WorkingDirectory=@SOURCE_DIR@
+ExecStart=/usr/bin/python3 -m linux_cua serve
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PYTHONUNBUFFERED=1
+RuntimeDirectory=linux-computer-use
+RuntimeDirectoryMode=0700
+RuntimeDirectoryPreserve=restart
+UMask=0077
+Restart=on-failure
+RestartSec=2
+NoNewPrivileges=yes
+RestrictAddressFamilies=AF_UNIX
+RestrictSUIDSGID=yes
+RestrictRealtime=yes
+LockPersonality=yes
+ProtectSystem=strict
+ProtectHome=read-only
+PrivateTmp=yes
+ReadWritePaths=%t/linux-computer-use
+
+[Install]
+WantedBy=graphical-session.target

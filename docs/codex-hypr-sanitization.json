@@ -1,0 +1,51 @@
+{
+  "checked_utc": "2026-10-22T22:09:03.008720+00:00",
+  "scope": "Files added or changed by Codex Hypr relative to its pinned upstream base, plus every source-archive member. Unchanged upstream source is outside this privacy scan.",
+  "upstream_base": "83086188ae0614bd882818ff1aa23f3194962012",
+  "checks": [
+    "private local user paths",
+    "private task references",
+    "common credential/token/private-key formats",
+    "private network endpoints",
+    "unexpected binary files and archive artifacts",
+    "personal assistant and local user identifiers"
+  ],
+  "findings": [],
+  "excluded_from_distribution": [
+    "credential files",
+    "raw screenshots and captures",
+    "browser profiles",
+    "raw task records and logs",
+    "generated build output and compiled driver"
+  ],
+  "review_notes": "Generic credential paths, synthetic test data, public upstream hashes and third-party license attribution are intentionally retained. This is a pattern-based privacy review, not a comprehensive security audit.",
+  "validation": {
+    "driver_build_exit_code": 0,
+    "driver_sha256": "3b6f974a7f4cc628ee916fa4ad8dc5347c291dc52cc2d3c8b7230cc3099b08c0",
+    "offline_tests": 38,
+    "offline_exit_code": 0,
+    "offline_duration_seconds": 1.539
+  },
+  "instructions": {
+    "quickstart": "docs/omarchy-quickstart.md",
+    "command_reference": "hyprland-service/README.md",
+    "source_comparison": "docs/codex-hypr-comparison.md",
+    "sanitized_verification": "hyprland-service/VERIFICATION.md"
+  },
+  "source_archive": {
+    "file": "hyprland-service/dist/linux-computer-use-service-0.2.2.tar.gz",
+    "files": 24,
+    "sha256": "3375c5e8df8a29caa0bf89169cec7728fc8f8955ac2e758ce2623b2ec16b5d14"
+  },
+  "files_scanned": 30,
+  "model_attribution": {
+    "environment": "Codex",
+    "models": [
+      "GPT-6 Astra",
+      "GPT-6.1 Sol"
+    ],
+    "work": "development and independent cross-checks",
+    "model_name_source": "https://developers.openai.com/api/docs/models"
+  },
+  "distribution_form": "source_snapshot"
+}

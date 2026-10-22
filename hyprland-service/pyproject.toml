@@ -1,0 +1,17 @@
+[project]
+name = "linux-computer-use-service"
+version = "0.2.2"
+description = "Local user-managed Hyprland desktop broker"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = []
+
+[project.scripts]
+linux-cua = "linux_cua.__main__:entry"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["linux_cua"]
